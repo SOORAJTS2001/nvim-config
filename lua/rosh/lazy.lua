@@ -69,7 +69,7 @@ require('lazy').setup({
     },
 
     -- Colorscheme
-    --
+
     {
         "folke/tokyonight.nvim",
         lazy = false,
@@ -77,14 +77,14 @@ require('lazy').setup({
         opts = {},
     },
 
-    --
     {
-        'folke/tokyonight.nvim',
+        "rebelot/kanagawa.nvim",
         lazy = false,
         priority = 1000,
+        opts = {},
     },
+
     { "ellisonleao/gruvbox.nvim", priority = 1000 },
-    { 'rebelot/kanagawa.nvim' },
     "xiyaowong/transparent.nvim",
 
     -- Comment
@@ -96,10 +96,22 @@ require('lazy').setup({
     'junegunn/vim-easy-align',
     'averms/black-nvim',
 
+    -- Startup
+    {
+        'glepnir/dashboard-nvim',
+        event = 'VimEnter',
+        config = function()
+            require('dashboard').setup {
+                -- config
+            }
+        end,
+        dependencies = { { 'nvim-tree/nvim-web-devicons' } }
+    }
+
 
 
 })
 
 -- vim.cmd [[colorscheme tokyonight]]
 vim.o.background = "dark" -- or "light" for light mode
-vim.cmd([[colorscheme tokyonight]])
+vim.cmd([[colorscheme kanagawa]])
