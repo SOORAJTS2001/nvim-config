@@ -1,0 +1,1 @@
+My Nvim Configurations inspired by https://github.com/Roshan-R:w
