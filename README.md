@@ -1,1 +1,1 @@
-My Nvim Configurations inspired by https://github.com/Roshan-R:w
+My Nvim Configurations inspired by [Roshan](https://github.com/Roshan-R)
